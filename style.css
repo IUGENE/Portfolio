@@ -1,0 +1,425 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(27, 25, 25);
+}
+
+.navbar__brand {
+    width: 60px;
+    margin-left: 10px;
+}
+
+.logo__img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.navbar__items {
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.navbar__item__1 {
+    padding-right: 10px;
+    color: white;
+
+}
+
+.navbar__item__2 {
+    padding-right: 10px;
+    color: white;
+
+}
+
+.navbar__item__3 {
+    padding-right: 10px;
+    color: rgb(206, 52, 52);
+    margin-right: 10px;
+
+}
+
+.container {
+    width: 100%;
+}
+
+.hero__container {
+    display: flex;
+    text-align: center;
+
+}
+
+.hero__des {
+    margin-top: 20px;
+}
+
+.hero__text__1 {
+    margin-left: 20px;
+}
+
+.hero__text__2 {
+    margin-left: 20px;
+}
+
+.hero__text__3 {
+    margin: 15px auto;
+    padding-left: 27px;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.hero__button__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero__button__des {
+    margin: 15px auto;
+}
+
+.hero__button {
+    color: #13a17a;
+    font-weight: 600;
+}
+
+.hero__button:hover {
+    cursor: pointer;
+    background-color: #13a17a;
+    color: white;
+    width: 150px;
+    text-align: center;
+    border: 4px solid #13a17a;
+}
+
+.hero__pic__container {
+    display: flex;
+    justify-content: center;
+}
+
+.hero__pic__des {
+    margin-top: 20px;
+    width: 170px;
+}
+
+.hero__pic {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.info__cover__des {
+    width: 100%;
+    height: 360px;
+}
+
+.info__cover__pic {
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.info__ cover__text {
+    position: relative;
+}
+
+.text__heading {
+    position: absolute;
+    top: 500px;
+    right: 50px;
+
+}
+
+.text__para__1 {
+    position: absolute;
+    top: 550px;
+    right: inherit;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.text__para__2 {
+    position: absolute;
+    top: 700px;
+    right: inherit;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.about__container {
+    margin-top: 30px;
+    width: 100%;
+    height: 500px;
+
+}
+
+.about__container__image {
+    width: 200px;
+    position: relative;
+
+}
+
+.about__gradient {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(236, 87, 33);
+    border-radius: 50%;
+    top: 5px;
+    left: 120px;
+    z-index: -3;
+}
+
+.about__image {
+    margin-top: 30px;
+    width: 100%;
+    border-radius: 50%;
+    margin-left: 90px;
+    margin-bottom: 30px;
+}
+
+.about__heading {
+    font-size: 38px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    color: rgb(234, 88, 34);
+}
+
+.about__container__info {
+    margin-top: 20px;
+}
+
+.about__text__1 {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    margin-left: 25px;
+}
+
+.about__text__2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: rgb(234, 88, 34);
+    margin-left: 25px;
+}
+
+.about__container__button {
+    margin-left: 30px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.about__button {
+    background-color: #13a17a;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-weight: 600;
+    width: 170px;
+}
+
+.material-symbols-outlined {
+    position: absolute;
+    top: 7px;
+    left: 135px;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .hero__container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero__text__2 {
+        margin: 5px auto;
+        font-size: 34px;
+    }
+
+    .hero__text__1 {
+        font-size: 34px;
+    }
+
+    .hero__text__3 {
+        font-size: 28px;
+    }
+
+    .hero__button {
+        transition-property: width;
+        transition: 0.3s;
+    }
+
+    .hero__button:hover {
+        cursor: pointer;
+        background-color: #13a17a;
+        color: white;
+        width: 200px;
+        text-align: center;
+        border: 4px solid #13a17a;
+    }
+
+    .info__cover__text {
+        padding: 10px;
+    }
+
+    .text__heading {
+        margin-right: 160px;
+        font-size: 28px;
+    }
+
+    .text__para__1 {
+        font-size: 24px;
+
+    }
+
+    .text__para__2 {
+        font-size: 24px;
+        margin-top: -10px;
+    }
+
+    .about__container__info {
+        margin-top: -100px;
+    }
+
+    .about__heading {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .about__text__1 {
+        font-size: 26px;
+        text-align: right;
+        margin-bottom: 15px;
+        margin-right: 80px;
+    }
+
+    .about__text__2 {
+        font-size: 26px;
+        text-align: right;
+        margin-bottom: 15px;
+        margin-right: 60px;
+    }
+
+    .about__container__button {
+        margin-left: 200px;
+    }
+
+    .about__button {
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width:1024px) {
+    .navbar__brand {
+        width: 80px;
+    }
+
+    .navbar__items {
+        margin-top: 25px;
+        font-size: 20px;
+    }
+
+    .hero__button {
+        transition-property: width;
+        transition: 0.3s;
+    }
+
+    .hero__button:hover {
+        cursor: pointer;
+        background-color: #13a17a;
+        color: white;
+        width: 300px;
+        height: 30px;
+        text-align: center;
+        border: 5px solid #13a17a;
+        font-weight: 600;
+    }
+
+    .info__cover__text {
+        padding: 20px;
+
+    }
+
+    .text__heading {
+        margin-right: 570px;
+        margin-top: 30px;
+    }
+
+    .text__para__1 {
+        margin-top: 30px;
+    }
+
+    .text__para__2 {
+        margin-top: -40px;
+    }
+
+    .info__cover__des {
+        width: 100%;
+        height: 290px;
+    }
+
+    .about__container {
+        text-align: end;
+    }
+
+    .about__container__image {
+        width: 350px;
+        margin-left: 800px;
+    }
+
+    .about__gradient {
+        width: 350px;
+        height: 325px;
+    }
+
+    .about__heading {
+        text-align: start;
+        font-size: 52px;
+        margin-left: 80px;
+    }
+
+    .about__container__info {
+        margin-top: -300px;
+    }
+
+    .about__text__1 {
+        text-align: left;
+        margin-left: 80px;
+    }
+
+    .about__text__2 {
+        text-align: left;
+        margin-left: 80px;
+    }
+
+    .material-symbols-outlined {
+        position: absolute;
+        top: 7px;
+        left: 200px;
+        font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+    }
+
+    .about__container__button {
+        margin-top: 40px;
+        text-align: left;
+        position: relative;
+
+    }
+
+    .about__button {
+        width: 260px;
+        font-weight: 600px;
+        font-size: 18px;
+    }
+}
