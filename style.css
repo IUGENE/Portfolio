@@ -7,6 +7,12 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -26,25 +32,38 @@ body {
 .navbar__items {
     margin-top: 20px;
     font-size: 15px;
+   
 }
 
 .navbar__item__1 {
     padding-right: 10px;
     color: white;
-
+    text-decoration: none;
 }
-
+.navbar__item__1:hover
+{
+    color: red;
+    
+}
 .navbar__item__2 {
     padding-right: 10px;
     color: white;
-
+    text-decoration: none;
 }
 
+.navbar__item__2:hover
+{
+    color: red;
+}
 .navbar__item__3 {
     padding-right: 10px;
-    color: rgb(206, 52, 52);
+    color: white;
     margin-right: 10px;
-
+    text-decoration: none;
+}
+.navbar__item__3:hover
+{
+    color: red;
 }
 
 .container {
@@ -58,7 +77,7 @@ body {
 }
 
 .hero__des {
-    margin-top: 20px;
+    margin-top: 80px;
 }
 
 .hero__text__1 {
@@ -223,6 +242,7 @@ body {
     padding: 12px;
     font-weight: 600;
     width: 170px;
+    margin-bottom: 30px;
 }
 
 .material-symbols-outlined {
@@ -230,6 +250,10 @@ body {
     top: 7px;
     left: 135px;
     color: white;
+}
+
+.material-symbols-outlined :hover {
+    background-color: red;
 }
 
 @media (min-width: 768px) {
@@ -314,9 +338,23 @@ body {
     .about__button {
         margin-bottom: 30px;
     }
+
+    .material-symbols-outlined :hover {
+        background-color: red;
+    }
 }
 
 @media (min-width:1024px) {
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    .hero__des {
+        margin-top: 100px;
+    }
+
     .navbar__brand {
         width: 80px;
     }
@@ -383,6 +421,7 @@ body {
         text-align: start;
         font-size: 52px;
         margin-left: 80px;
+        margin-top: 40px;
     }
 
     .about__container__info {
@@ -410,6 +449,10 @@ body {
             'opsz' 24
     }
 
+    .material-symbols-outlined:hover {
+        cursor: pointer;
+       color: red;
+    }
     .about__container__button {
         margin-top: 40px;
         text-align: left;
@@ -422,4 +465,5 @@ body {
         font-weight: 600px;
         font-size: 18px;
     }
+    
 }
